@@ -1,6 +1,4 @@
 
-console.log('js file loaded')
-
 //puzzle.mead.io/puzzle
 
 
