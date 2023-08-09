@@ -14,7 +14,8 @@ weatherForm.addEventListener('submit',(e)=>{
     const location = search.value
     message1.textContent='Loading...'
     message2.textContent=''
-    const url = 'http://localhost:3000/weather?address='+location
+    //removing http://localhost:3000 from the url
+    const url = '/weather?address='+location
 
     //this is client side js to fetch data from a url
     fetch(url).then((response)=>{
