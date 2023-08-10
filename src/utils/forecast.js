@@ -14,9 +14,7 @@ const forecast =(latitude, longitude, callback)=>{
         }
         else{
             console.log(url)
-            console.log(body.current)
-            const {weather_descriptions, temperature, feelslike, precip} = body.current
-            const {humidity} = body.current.weather_description
+                        const {weather_descriptions, temperature, feelslike, precip, humidity} = body.current
             const data = weather_descriptions[0]+ ".\n"+
             "It is currently:"+temperature+" out. \n"+
             "It feels like: "+feelslike+" degrees out. \n"+
